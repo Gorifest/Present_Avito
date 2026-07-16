@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070b17">
+  <title>Avito — презентация кейса</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="presentation" class="presentation" aria-label="Презентация" aria-live="polite">
+    <div id="background" class="background" aria-hidden="true"></div>
+    <div id="slides" class="slides"></div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <div id="loading" class="loading" role="status">
+      <span class="spinner" aria-hidden="true"></span>
+      <span id="loadingText">Загрузка слайдов…</span>
+    </div>
+
+    <section id="startScreen" class="start-screen">
+      <div class="start-card">
+        <p class="eyebrow">AVITO CASE</p>
+        <h1>Презентация проекта</h1>
+        <p id="preloadStatus">Подготавливаем материалы…</p>
+        <button id="startButton" class="start-button" type="button" disabled>
+          Начать презентацию
+        </button>
+      </div>
+    </section>
+
+    <div id="errorNotice" class="error-notice" role="alert" hidden></div>
+
+    <div id="controls" class="controls" aria-label="Управление презентацией">
+      <div id="counter" class="counter">1 / 12</div>
+      <div class="control-group">
+        <button id="previousButton" class="icon-button" type="button" aria-label="Предыдущий слайд" title="Предыдущий слайд (←)">←</button>
+        <button id="playButton" class="icon-button" type="button" aria-label="Пауза" title="Пауза / продолжить">
+          <span id="playIcon" aria-hidden="true">Ⅱ</span>
+        </button>
+        <button id="nextButton" class="icon-button" type="button" aria-label="Следующий слайд" title="Следующий слайд (→)">→</button>
+      </div>
+      <button id="fullscreenButton" class="icon-button fullscreen-button" type="button" aria-label="Полноэкранный режим" title="Полноэкранный режим">⛶</button>
+    </div>
+
+    <div class="progress-track" aria-hidden="true">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
