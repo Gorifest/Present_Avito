@@ -138,7 +138,7 @@ function restartProgress() {
 function startAutoplay() {
   stopAutoplay(false);
   isPlaying = true;
-  playIcon.textContent = 'Ⅱ';
+  playIcon.classList.add('is-pause');
   playButton.setAttribute('aria-label', 'Пауза');
   autoplayTimer = window.setInterval(() => nextSlide(false), SLIDE_DURATION);
   restartProgress();
@@ -148,7 +148,7 @@ function stopAutoplay(updateProgress = true) {
   window.clearInterval(autoplayTimer);
   autoplayTimer = null;
   isPlaying = false;
-  playIcon.textContent = '▶';
+  playIcon.classList.remove('is-pause');
   playButton.setAttribute('aria-label', 'Продолжить');
   if (updateProgress) progressBar.classList.remove('running');
 }

@@ -34,11 +34,15 @@
     <div id="controls" class="controls" aria-label="Управление презентацией">
       <div id="counter" class="counter">1 / 12</div>
       <div class="control-group">
-        <button id="previousButton" class="icon-button" type="button" aria-label="Предыдущий слайд" title="Предыдущий слайд (←)">←</button>
-        <button id="playButton" class="icon-button" type="button" aria-label="Пауза" title="Пауза / продолжить">
-          <span id="playIcon" aria-hidden="true">Ⅱ</span>
+        <button id="previousButton" class="icon-button" type="button" aria-label="Предыдущий слайд" title="Предыдущий слайд (←)">
+          <span class="nav-icon nav-icon-left" aria-hidden="true"></span>
         </button>
-        <button id="nextButton" class="icon-button" type="button" aria-label="Следующий слайд" title="Следующий слайд (→)">→</button>
+        <button id="playButton" class="icon-button" type="button" aria-label="Пауза" title="Пауза / продолжить">
+          <span id="playIcon" class="play-icon is-pause" aria-hidden="true"></span>
+        </button>
+        <button id="nextButton" class="icon-button" type="button" aria-label="Следующий слайд" title="Следующий слайд (→)">
+          <span class="nav-icon nav-icon-right" aria-hidden="true"></span>
+        </button>
       </div>
       <button id="fullscreenButton" class="icon-button fullscreen-button" type="button" aria-label="Полноэкранный режим" title="Полноэкранный режим">⛶</button>
     </div>
